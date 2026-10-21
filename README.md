@@ -19,3 +19,6 @@ Saved with the vehicle, works in multiplayer, AI helpers are not held back by it
 ## Install
 Zip the CONTENTS of this folder (modDesc.xml at the top of the zip, forward-slash paths) as
 `FS25_ParkingBrake_ProEdition.zip` and put it in the FS25 `mods` folder. Don't rename the zip.
+
+## License
+MIT, see `LICENSE`.
