@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="113">
+    <author>PropaineX</author>
+    <version>1.0.9.0</version>
+    <title>
+        <en>Parking Brake Pro Edition</en>
+    </title>
+    <description>
+        <en><![CDATA[Applies the parking brake in Farming Simulator 25.
+
+Press backslash (\) in any drivable vehicle to put the parking brake on, and again to release it. The key can be changed in the controls menu.
+
+While the parking brake is on, the vehicle holds with full brakes, the throttle does nothing and cruise control is switched off. A warning blinks if you try to drive. The BRAKE light on the speedometer is lit while the parking brake is on, and also whenever the game, an AI helper or another mod holds the vehicle with the handbrake. The parking brake is saved with the vehicle and works in multiplayer. AI helpers are not held back by it.]]></en>
+    </description>
+    <iconFilename>icon_ParkingBrake.dds</iconFilename>
+    <multiplayer supported="true" />
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/ParkingBrakeRegister.lua" />
+        <sourceFile filename="scripts/ParkingBrakeHud.lua" />
+    </extraSourceFiles>
+
+    <actions>
+        <action name="PARKING_BRAKE_TOGGLE" category="VEHICLE" />
+    </actions>
+
+    <inputBinding>
+        <actionBinding action="PARKING_BRAKE_TOGGLE">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_backslash" />
+        </actionBinding>
+    </inputBinding>
+
+    <l10n>
+        <text name="input_PARKING_BRAKE_TOGGLE"><en>Parking brake on/off</en></text>
+        <text name="action_parkingBrakeApply"><en>Apply parking brake</en></text>
+        <text name="action_parkingBrakeRelease"><en>Release parking brake</en></text>
+        <text name="warning_parkingBrakeOn"><en>Parking brake is on</en></text>
+    </l10n>
+</modDesc>
